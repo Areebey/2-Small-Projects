@@ -10,20 +10,27 @@ body{
     width: 80%;
     min-height:100vh;
     margin: auto;
+    background-color: #ffcf90;
 
 }
 
 input{
-    background-color: whitesmoke;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid rgba(49, 49, 49, 0.479);
+    font: 100 1.2rem "Lucida Sans";
     outline: none;
     font: 100 1rem sans-serif;
-    padding: 10px;
+    padding: 20px;
 }
 
 button{
     background-color: rgba(49, 49, 49, 0.863);
     color: white;
-    padding: 10px;
+    padding: 25px;
+    width: 19%;
+    font: 100 1rem sans-serif;
+    outline: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -32,12 +39,22 @@ button{
 button:hover{
     background-color: black;
 }
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .tag{
-    background-color: burlywood;
+    background-color: rgb(223, 172, 107);
     box-sizing: border-box;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
+    color:whitesmoke;
+    width: 30%;
+    padding: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
     border-radius: 5px;
-    
+    transition: all 0.5s;
+}
+.tag:hover{
+    transform: translateY(-10px);
 }
